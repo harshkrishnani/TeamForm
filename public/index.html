@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Team Member Form</h1>
+    </div>    
+
+        <form id="teamForm">
+            <div>
+            <label>Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label>Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+            
+            
+            <label>Mother's Name:</label>
+            <input type="text" id="motherName" name="motherName" required>
+            
+            <label>Contact Number:</label>
+            <input type="text" id="contact" name="contact" required pattern="\d{10}" title="Enter a valid 10-digit number">
+            
+            <label>Email:</label>
+            <input type="email" id="email" name="email" required>
+           
+            <label>Emergency Contact:</label>
+            <input type="text" id="emergencyContact" name="emergencyContact" required pattern="\d{10}" title="Enter a valid 10-digit number">
+            </div>
+            <label>Address:</label>
+            <input type="text" id="address" name="address" required>
+            <div>
+            <label>DOB:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Date of Joining:</label>
+            <input type="date" id="joiningDate" name="joiningDate" required>
+
+            <label>PAN Card:</label>
+            <input type="text" id="panCard" name="panCard" required>
+
+            <label>UAN Number:</label>
+            <input type="text" id="uanNumber" name="uanNumber" required>
+            </div>
+            <div>
+            <h2>Bank Details</h2>
+            
+            <label>Account Name:</label>
+            <input type="text" id="accountName" name="accountName" required>
+
+            <label>IFSC Code:</label>
+            <input type="text" id="ifsc" name="ifsc" required>
+
+            <label>Bank Branch:</label>
+            <input type="text" id="branch" name="branch" required>
+
+            <label>Bank Name:</label>
+            <input type="text" id="bankName" name="bankName" required>
+
+            <label>Account Number:</label>
+            <input type="text" id="accountNumber" name="accountNumber" required>
+            </div>
+            <h2>Upload Documents</h2>
+
+            <label>PAN Card Upload:</label>
+            <input type="file" id="panCardUpload" name="panCardUpload" accept=".jpg, .jpeg, .png, .pdf" required>
+
+            <label>Aadhaar Upload:</label>
+            <input type="file" id="aadhaarUpload" name="aadhaarUpload" accept=".jpg, .jpeg, .png, .pdf" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Team Members</h2>
+        <table id="teamTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
