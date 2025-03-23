@@ -1,0 +1,8 @@
+express
+pg
+pg-pool
+dotenv
+multer
+cors
+body-parser
+
