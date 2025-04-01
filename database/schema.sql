@@ -1,3 +1,4 @@
+CREATE DATABASE teamdb;
 CREATE TABLE team_members (
     id SERIAL PRIMARY KEY,
     name TEXT, father_name TEXT, mother_name TEXT, contact TEXT,
